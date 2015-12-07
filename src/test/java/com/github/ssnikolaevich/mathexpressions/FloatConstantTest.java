@@ -17,10 +17,12 @@ public class FloatConstantTest {
         assertEquals(Presedences.CONSTANT, expression.getPrecedence());
     }
 
+    @Test
     public void testCalculate() {
         assertEquals(3.2f, expression.calculate(), 0.001);
     }
 
+    @Test
     public void testAsString() {
         assertEquals("3.2", expression.asString());
     }
